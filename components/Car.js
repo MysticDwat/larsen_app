@@ -9,6 +9,10 @@ import car_data from '../data/car_data.json';
 export default function Car({car_source}) {
     const [displayed_id, set_displayed_id] = useState(false);
 
+    const info_blocks = car_data.map((info_set) => info_set.info);
+    const info_pointers = car_data.map((info_set) => info_set.pointer);
+    const info_pressables = car_data.map((info_set) => info_set.pressables[0]);
+
     return(
         <View style={[styles.container, styles.wrapper]}>
             <Pressable
@@ -16,6 +20,7 @@ export default function Car({car_source}) {
                     set_displayed_id(-1);
                     console.log('Tapped',-1);
                 }}
+                style={[styles.car_pressable, styles.container]}
             >
                 <Image 
                     style={[styles.car]}
@@ -23,41 +28,43 @@ export default function Car({car_source}) {
                 />
             </Pressable>
 
-            {car_data.map(
-                (info_set, id) => {
-                    let info_block = info_set.info;
-                    let info_pressables = info_set.pressables;
+            {info_blocks.map(
+                (block, id) => {
+                    return (
+                        <InfoBlock 
+                            displayed_id={displayed_id}
+                            id={id}
+                            key={`info_block_${id}`}
+                            info_text={block.text}
+                            info_styles={[styles.info, block.style]}
+                        />
+                    );
+                }
+            )}
 
-                    return(
-                        <View key={`view_${id}`} style={{position: 'absolute', width:0, height:0}}>
-                            {info_pressables.map(
-                                (pressable_style, id_) => {
-                                    return (
-                                        <InfoPressable 
-                                            displayed_id={displayed_id}
-                                            set_displayed_id={set_displayed_id}
-                                            id={id}
-                                            key={`pressable_${id}_${id_}`}
-                                            pressable_style={pressable_style}
-                                        />
-                                    );
-                                }
-                            )}
+            {info_pressables.map(
+                (pressable, id) => {
+                    return (
+                        <InfoPressable 
+                            displayed_id={displayed_id}
+                            set_displayed_id={set_displayed_id}
+                            id={id}
+                            key={`pressable_${id}`}
+                            pressable_style={[pressable]}
+                        />
+                    );
+                }
+            )}
 
-                            <Pointer 
-                                style={info_set.pointer}
-                                displayed_id={displayed_id}
-                                id={id}
-                            />
-
-                            <InfoBlock 
-                                displayed_id={displayed_id}
-                                id={id}
-                                key={`info_block_${id}`}
-                                info_text={info_block.text}
-                                info_styles={[styles.info, info_block.style]}
-                            />
-                        </View>
+            {info_pointers.map(
+                (pointer, id) => {
+                    return (
+                        <Pointer 
+                            style={pointer}
+                            displayed_id={displayed_id}
+                            id={id}
+                            key={`pointer_${id}`}
+                        />
                     );
                 }
             )}
@@ -73,7 +80,9 @@ const styles = StyleSheet.create({
     },
     wrapper: {
         position: 'relative',
-        transform: [{rotate:'90deg'}],
+        zIndex: -2,
+        width: '100%',
+        height: '100%',
     },
     info: {
       position: 'absolute',
@@ -91,6 +100,10 @@ const styles = StyleSheet.create({
       zIndex: -1,
       height: 182,
       width: 700,
-      top: -20,
+      top: 0,
     },
+    car_pressable: {
+        width: '100%',
+        height: '100%',
+    }
 });

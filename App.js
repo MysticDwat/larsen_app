@@ -20,8 +20,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#383333',
     alignItems: 'center',
     justifyContent: 'center',
+    zIndex: -2,
   },
-  car: {
-    transform: [{rotate:'90deg'}]
-  }
 });

@@ -5,16 +5,16 @@
             "text": "The body of the car is made with aluminum to minimize the overall weight. In order to support the structure and increase aerodynamic efficiency, special air ducts called \"NACA ducts\" are sculpted into the body panel. They direct air from beneath the car to the exterior and then up to the drivers compartment, reducing drag.",
             "style": 
             {
-                "width": 588,
-                "height": "auto",
-                "top": 100,
-                "right": -280
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":70,
-            "right":-150,
+            "top": 286,
+            "left": 535,
             "transform": 
             [
                 {
@@ -25,8 +25,8 @@
         "pressables":
         [
             {
-                "top": 15,
-                "right": 20,
+                "top": 210,
+                "left": 400,
                 "width": 260,
                 "height": 65,
                 "zIndex": 0
@@ -39,16 +39,16 @@
             "text": "A new feature of the latest generation are side vents which help direct air to the engine inlet. To provide protection, body panels extend to help absorb energy during a side-impact and its inlet is surrounded by a mesh cone to prevent any foreign objects from entering and damaging the engine.",
             "style": 
             {
-                "width": 500,
-                "height": "auto",
-                "top": 100,
-                "right": -245
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":45,
-            "right":35,
+            "top": 260,
+            "left": 360,
             "transform": 
             [
                 {
@@ -59,8 +59,8 @@
         "pressables":
         [
             {
-                "top": 20,
-                "right": 80,
+                "top": 217,
+                "left": 347,
                 "width": 60,
                 "height": 50,
                 "zIndex": 0
@@ -73,16 +73,16 @@
             "text": "Inside the cockpit is a racing seat that is custom molded from energy absorbing foam to fit each driver. A driver is protected by a twelve-point harness, a steel roll cage, and an aluminum shell.",
             "style": 
             {
-                "width": 398,
-                "height": "auto",
-                "top": -130,
-                "right": -245
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":-60,
-            "right":-15,
+            "top": 150,
+            "left": 417,
             "transform": 
             [
                 {
@@ -93,8 +93,8 @@
         "pressables":
         [
             {
-                "top": -15,
-                "right": 20,
+                "top": 180,
+                "left": 400,
                 "width": 60,
                 "height": 30,
                 "zIndex": 0
@@ -107,16 +107,16 @@
             "text": "The driver's compartment contains all the absolute essentials a driver needs to operate the dragster - no more, no less. A removable steering wheel helps the driver get in and out while various levers, switches, and gauges help the driver control the car.",
             "style": 
             {
-                "width": 350,
-                "height": "auto",
-                "top": -150,
-                "right": -350
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top": -35,
-            "right":-80,
+            "top": 176,
+            "left": 483,
             "transform": 
             [
                 {
@@ -127,8 +127,8 @@
         "pressables":
         [
             {
-                "top": -15,
-                "right": -25,
+                "top": 180,
+                "left": 457,
                 "width": 70,
                 "height": 40,
                 "zIndex": 0
@@ -141,16 +141,16 @@
             "text": "The afterburner is constructed of stainless-steel. Not only is it functional for directing exhaust - and more excitingly, throwing flames - it's also responsible for making up around 60% of the power output of the engine!",
             "style": 
             {
-                "width": 355,
-                "height": "auto",
-                "top": -135,
-                "right": -35
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":-50,
-            "right":230,
+            "top": 163,
+            "left": 167,
             "transform": 
             [
                 {
@@ -161,8 +161,8 @@
         "pressables":
         [
             {
-                "top": -5,
-                "right": 308,
+                "top": 185,
+                "left": 110,
                 "width": 110,
                 "height": 50,
                 "zIndex": 0
@@ -175,28 +175,28 @@
             "text": "The parachutes located behind the rear wheels of the dragster are the primary method of slowing and stopping the car at the end of a pass. When ready, the driver pulls the parachute lever to release the parachute.",
             "style": 
             {
-                "width": 350,
-                "height": "auto",
-                "top": 90,
-                "right": -30
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":10,
-            "right":320,
+            "top": 174,
+            "left": 87,
             "transform": 
             [
                 {
-                    "rotate": "20deg"
+                    "rotate": "160deg"
                 }
             ]
         },
         "pressables":
         [
             {
-                "top": 7,
-                "right": 330,
+                "top": 203,
+                "left": 92,
                 "width": 58,
                 "height": 20,
                 "zIndex": 0
@@ -209,16 +209,16 @@
             "text": "The engine cowling is an aluminum body panel that sits above the engine in order to direct airflow over the rough surfaces of the engine. It also protects and foreign objects from coming into contact with the engine as it is running.",
             "style": 
             {
-                "width": 350,
-                "height": "auto",
-                "top": -145,
-                "right": -70
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":-45,
-            "right":150,
+            "top": 170,
+            "left": 257,
             "transform": 
             [
                 {
@@ -229,8 +229,8 @@
         "pressables":
         [
             {
-                "top": 0,
-                "right": 215,
+                "top": 197,
+                "left": 209,
                 "width": 140,
                 "height": 70,
                 "zIndex": 0
@@ -243,16 +243,16 @@
             "text": "The car holds two fuel tanks - one for either side of the vehicle. Each fuel tank contains twelve gallons of jet fuel - 24 total gallons! Inside each tank is what's called a \"baffle\". These baffles help keep the fuel from sloshing while the car makes a pass down the track, but they are also structurally rigid to help dissipate energy in the event of a side-impact crash.",
             "style": 
             {
-                "width": 450,
-                "height": "auto",
-                "top": 90,
-                "right": -165
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":60,
-            "right":160,
+            "top": 274,
+            "left": 242,
             "transform": 
             [
                 {
@@ -263,8 +263,8 @@
         "pressables":
         [
             {
-                "top": 40,
-                "right": 217,
+                "top": 232,
+                "left": 204,
                 "width": 105,
                 "height": 30,
                 "zIndex": 0
@@ -277,16 +277,16 @@
             "text": "The front wing and nose of the car are the very first pieces to make contact with oncoming air. They are specifically designed to direct airflow over the rest of the car's body. Made entirely of aluminum, the wing is incredibly strong structurally - and helps to generate between 250 to 300 pounds of downforce as the car runs down the track!",
             "style": 
             {
-                "width": 450,
-                "height": "auto",
-                "top": 100,
-                "right": -375
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":70,
-            "right":-317,
+            "top": 284,
+            "left": 720,
             "transform": 
             [
                 {
@@ -297,8 +297,8 @@
         "pressables":
         [
             {
-                "top": 50,
-                "right": -275,
+                "top": 245,
+                "left": 700,
                 "width": 50,
                 "height": 35,
                 "zIndex": 0
@@ -311,16 +311,16 @@
             "text": "The front wheels and tires of the dragster are made specifically for the car. The tires are pressurized to 40 psi (pounds per square inch) of shop air. The wheels and tires are also equipped with disc brakes to help hold the car in place while it is being staged (lined up) at the starting line of the drag strip.",
             "style": 
             {
-                "width": 383,
-                "height": "auto",
-                "top": 100,
-                "right": -338
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":73,
-            "right":-263,
+            "top": 291,
+            "left": 665,
             "transform": 
             [
                 {
@@ -331,11 +331,11 @@
         "pressables": 
         [
             {
+                "top": 230, 
+                "left": 646, 
                 "width": 56, 
                 "height": 56, 
-                "top": 36, 
-                "right": -225, 
-                "borderRadius": "50%",
+                "borderRadius": 50,
                 "zIndex": 2
             }
         ]
@@ -346,16 +346,16 @@
             "text": "The rear tires of the car are called \"racing slicks\". They are given this name because there is no tread on the tire - creating a \"slick\" surface. This is done in an attempt to maximize the surface area of the contact patch of the tire touching the ground for optimal grip and control while staging the car at the starting line.",
             "style": 
             {
-                "width": 398,
-                "height": "auto",
-                "top": 100,
-                "right": -80
+                "top": "10%",
+                "left": "10%",
+                "width": "80%",
+                "height": "20%"
             }
         },
         "pointer": 
         {
-            "top":73,
-            "right":247,
+            "top": 286,
+            "left": 154,
             "transform": 
             [
                 {
@@ -366,11 +366,11 @@
         "pressables":
         [
             {
+                "top": 209, 
+                "left": 127, 
                 "width": 72, 
-                "height": 70, 
-                "top": 15, 
-                "right": 295, 
-                "borderRadius": "50%",
+                "height": 70,
+                "borderRadius": 50,
                 "zIndex": 2
             }
         ]

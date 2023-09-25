@@ -5,10 +5,11 @@ export default function InfoBlock ({
     id,
     info_text='', 
     info_styles=[],
+    text_styles=[],
 }) {
     return (
         <View style={displayed_id !== id ? [styles.none] : info_styles}>
-            <Text>{info_text}</Text>
+            <Text style={text_styles}>{info_text}</Text>
         </View>
     );
 }
