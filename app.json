@@ -16,7 +16,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.mysticaldwat.larsenapp"
+      "bundleIdentifier": "com.mysticaldwat.larsenapp",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
