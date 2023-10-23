@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { StyleSheet, View, Pressable, Image } from 'react-native';
+import { StyleSheet, View, Pressable, Image, Text } from 'react-native';
 import InfoBlock from './InfoBlock';
 import InfoPressable from './InfoPressable';
 import Pointer from './Pointer';
 
 import car_data from '../data/car_data.json';
 
-export default function Car({car_source}) {
+export default function Car({car_source, set_current_view, use_outlines}) {
     const [displayed_id, set_displayed_id] = useState(false);
 
     const info_blocks = car_data.map((info_set) => info_set.info);
@@ -51,6 +51,7 @@ export default function Car({car_source}) {
                             id={id}
                             key={`pressable_${id}`}
                             pressable_style={[pressable]}
+                            use_outlines={use_outlines}
                         />
                     );
                 }
@@ -68,6 +69,13 @@ export default function Car({car_source}) {
                     );
                 }
             )}
+
+            <Pressable
+                onPress={() => set_current_view('')}
+                style={styles.button_container}
+            >
+                <Text style={styles.button}>Back</Text>
+            </Pressable>
         </View>
     );
 }
@@ -98,12 +106,29 @@ const styles = StyleSheet.create({
     },
     car: {
       zIndex: -1,
-      height: 182,
-      width: 700,
+      width: '80%',
       top: 0,
     },
     car_pressable: {
         width: '100%',
         height: '100%',
+    },
+    button_container: {
+        position: 'absolute',
+        top:'81%',
+    },
+    button:{
+        height: 'auto',
+        backgroundColor: '#a82727',
+        color: 'black',
+        padding: 5,
+        borderRadius: 5,
+        shadowColor: '#5e1515',
+        shadowOffset: {width: 5, height: 5},
+        shadowOpacity: 1,
+        shadowRadius: 2,
+        minWidth: '10%',
+        textAlign: 'center',
+        fontSize: 24,
     }
 });
