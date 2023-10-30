@@ -1,14 +1,16 @@
-import { View, Pressable, StyleSheet } from "react-native";
+//imports
+import { Pressable, StyleSheet } from "react-native";
 
 export default function InfoPressable ({
     use_outlines,
     set_displayed_id,
     id,
     pressable_style=[],
+    styles,
 }) {
     return (
         <Pressable
-            style={[styles.pressable, pressable_style, (use_outlines ? [styles.outline] : [])]} 
+            style={[styles.absolute, pressable_style, (use_outlines ? [styles.outline] : [])]} 
             onPress={() => {
                 set_displayed_id(id);
                 console.log('Tapped',id);
@@ -16,13 +18,3 @@ export default function InfoPressable ({
         />
     );
 }
-
-const styles = StyleSheet.create({
-    pressable: {
-        position: 'absolute',
-    },
-    outline: {
-        borderWidth: 1,
-        borderColor: 'red',
-    }
-});

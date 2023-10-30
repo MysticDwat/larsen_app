@@ -1,12 +1,19 @@
+//imports
 import { StyleSheet, View } from "react-native";
 
-export default function Pointer ({style,id,displayed_id}) {
+//pointer triangle
+export default function Pointer ({style,id,displayed_id, styles}) {
     return (
-        <View style={displayed_id !== id ? [styles.none] : [styles.pointer, style]} />
+        <View style={displayed_id !== id ? [styles.hide] : [_styles.pointer, style]} />
     );
 }
 
-const styles = StyleSheet.create({
+/*
+    style sheet
+    pointer to make a triangle
+    none to hide
+*/
+const _styles = StyleSheet.create({
     pointer: {
         position: 'absolute',
         width: 0,
@@ -17,8 +24,5 @@ const styles = StyleSheet.create({
         borderBottomColor: '#ff0000',
         borderLeftColor: 'transparent',
         borderRightColor: 'transparent',
-    },
-    none: {
-        display: 'none',
     },
 });

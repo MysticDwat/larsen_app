@@ -1,56 +1,24 @@
+//imports
 import { StyleSheet, View, Pressable, Text } from 'react-native';
 
-export default function Options({set_current_view, set_use_outlines, use_outlines}) {
-    return (
-        <View style={styles.container}>
-            <Pressable
-                onPress={() => set_use_outlines(current => !current)}
-            >
-                <Text style={styles.button}>Outlines: {use_outlines ? 'True' : 'False'}</Text>
-            </Pressable>
+import Button from './Button';
 
-            <Pressable
-                onPress={() => set_current_view('')}
-            >
-                <Text style={styles.button}>Back</Text>
-            </Pressable>
+export default function Options({set_current_view, set_use_outlines, use_outlines, style, styles}) {
+    return (
+        <View style={[styles.container, styles.button_container, style]}>
+            {/*Outline Option*/}
+            <Button 
+                styles={styles}
+                func={() => set_use_outlines(current => !current)}
+                button_text={'Outlines: ' + (use_outlines ? 'True' : 'False')}
+            />
+
+            {/*Back to Menu*/}
+            <Button 
+                styles={styles}
+                func={() => set_current_view('')}
+                button_text={'Back'}
+            />
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        rowGap: 10,
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    button:{
-        height: 'auto',
-        backgroundColor: '#a82727',
-        color: 'black',
-        padding: 5,
-        borderRadius: 5,
-        shadowColor: '#5e1515',
-        shadowOffset: {width: 5, height: 5},
-        shadowOpacity: 1,
-        shadowRadius: 2,
-        minWidth: '15%',
-        textAlign: 'center',
-        fontSize: 30,
-    },
-    title: {
-        minWidth: "33%",
-        fontSize: 40,
-        height: 'auto',
-        backgroundColor: '#a82727',
-        color: 'black',
-        padding: 5,
-        borderRadius: 5,
-        shadowColor: '#5e1515',
-        shadowOffset: {width: 5, height: 5},
-        shadowOpacity: 1,
-        shadowRadius: 2,
-        textAlign: 'center',
-    }
-});

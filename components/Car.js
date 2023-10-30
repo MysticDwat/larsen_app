@@ -1,51 +1,67 @@
+//imports
 import { useState } from 'react';
 import { StyleSheet, View, Pressable, Image, Text } from 'react-native';
+
+//components
 import InfoBlock from './InfoBlock';
 import InfoPressable from './InfoPressable';
 import Pointer from './Pointer';
+import Button from './Button';
 
+//car data file
 import car_data from '../data/car_data.json';
 
-export default function Car({car_source, set_current_view, use_outlines}) {
+export default function Car({style,
+                             styles, 
+                             use_outlines,
+                             car_source, 
+                             set_current_view,}) {
+    //state to track current displayed info
     const [displayed_id, set_displayed_id] = useState(false);
 
+    //splitting the car data into separate parts
     const info_blocks = car_data.map((info_set) => info_set.info);
     const info_pointers = car_data.map((info_set) => info_set.pointer);
     const info_pressables = car_data.map((info_set) => info_set.pressables[0]);
 
     return(
-        <View style={[styles.container, styles.wrapper]}>
+        <View style={[styles.container, styles.far_back, styles.full_size, style]}>
+            {/*Car Image and Pressable*/}
             <Pressable
                 onPress={() => {
                     set_displayed_id(-1);
                     console.log('Tapped',-1);
                 }}
-                style={[styles.car_pressable, styles.container]}
+                style={[styles.full_size, styles.container]}
             >
                 <Image 
-                    style={[styles.car]}
+                    style={[_styles.car]}
                     source={car_source} 
                 />
             </Pressable>
-
+            
+            {/*Generate Info Blocks*/}
             {info_blocks.map(
                 (block, id) => {
                     return (
                         <InfoBlock 
+                            styles={styles}
                             displayed_id={displayed_id}
                             id={id}
                             key={`info_block_${id}`}
                             info_text={block.text}
-                            info_styles={[styles.info, block.style]}
+                            info_styles={[block.style]}
                         />
                     );
                 }
             )}
 
+            {/*Generate Pressables*/}
             {info_pressables.map(
                 (pressable, id) => {
                     return (
-                        <InfoPressable 
+                        <InfoPressable
+                            styles={styles} 
                             displayed_id={displayed_id}
                             set_displayed_id={set_displayed_id}
                             id={id}
@@ -57,10 +73,12 @@ export default function Car({car_source, set_current_view, use_outlines}) {
                 }
             )}
 
+            {/*Generate Pointers*/}
             {info_pointers.map(
                 (pointer, id) => {
                     return (
                         <Pointer 
+                            styles={styles}
                             style={pointer}
                             displayed_id={displayed_id}
                             id={id}
@@ -70,65 +88,34 @@ export default function Car({car_source, set_current_view, use_outlines}) {
                 }
             )}
 
-            <Pressable
-                onPress={() => set_current_view('')}
-                style={styles.button_container}
-            >
-                <Text style={styles.button}>Back</Text>
-            </Pressable>
+            {/*Back Button to Main Menu*/}
+            <Button 
+                styles={styles}
+                style={[_styles.button_position, styles.absolute]}
+                func={() => set_current_view('')}
+                button_text={'Back'}
+            />
         </View>
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    wrapper: {
-        position: 'relative',
-        zIndex: -2,
-        width: '100%',
-        height: '100%',
-    },
-    info: {
-      position: 'absolute',
-      height: 'auto',
-      backgroundColor: '#a82727',
-      color: 'black',
-      padding: 5,
-      borderRadius: 5,
-      shadowColor: '#5e1515',
-      shadowOffset: {width: 5, height: 5},
-      shadowOpacity: 1,
-      shadowRadius: 2,
-    },
+/* 
+    style sheet
+    container to center children
+    wrapper to encompass the entire screen
+    info to define info blocks
+    car to define car image
+    car pressable to define car pressable
+    button container to position and size back button
+    button to define back button
+*/
+const _styles = StyleSheet.create({
     car: {
       zIndex: -1,
       width: '80%',
       top: 0,
     },
-    car_pressable: {
-        width: '100%',
-        height: '100%',
-    },
-    button_container: {
-        position: 'absolute',
+    button_position: {
         top:'81%',
     },
-    button:{
-        height: 'auto',
-        backgroundColor: '#a82727',
-        color: 'black',
-        padding: 5,
-        borderRadius: 5,
-        shadowColor: '#5e1515',
-        shadowOffset: {width: 5, height: 5},
-        shadowOpacity: 1,
-        shadowRadius: 2,
-        minWidth: '10%',
-        textAlign: 'center',
-        fontSize: 24,
-    }
 });
