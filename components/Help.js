@@ -10,7 +10,7 @@ export default function Help({set_current_view,
         <View style={[styles.container, styles.button_container, style]}>
             {/*Help Text*/}
             <View style={[_styles.help_container, styles.ui_element]}>
-                <Text style={[styles.font_20, styles.font_center]}>
+                <Text style={[styles.font_20, styles.font_justify]}>
                     Welcome to LMS Dragster! This companion educational app will help you learn more about our dragsters. 
                     Simply tap on a part to learn more about that part. Every part of the dragster can be tapped and if you 
                     are having trouble finding the parts, feel free to turn on outlines in the options menu.

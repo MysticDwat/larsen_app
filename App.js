@@ -79,13 +79,16 @@ const styles = StyleSheet.create({
     color: 'black',
     backgroundColor: '#a82727',
     borderColor: '#5e1515',
-    borderWidth: 2,
+    borderWidth: 3,
   },
   button: {
     minWidth: '15%',
   },
   title: {
     minWidth: '33%',
+  },
+  font_16: {
+    fontSize: 16,
   },
   font_20: {
     fontSize: 20,
@@ -95,6 +98,9 @@ const styles = StyleSheet.create({
   },
   font_40: {
     fontSize: 40,
+  },
+  font_justify: {
+    textAlign: 'justify',
   },
   font_center: {
     textAlign: 'center',

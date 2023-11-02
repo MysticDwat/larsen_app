@@ -11,8 +11,8 @@ export default function InfoBlock ({
     styles,
 }) {
     return (
-        <View style={displayed_id !== id ? [styles.hide] : [styles.ui_element, styles.absolute, info_styles]}>
-            <Text style={[styles.font_20, styles.font_center, text_styles]}>{info_text}</Text>
+        <View style={displayed_id !== id ? [styles.hide] : [styles.ui_element, styles.absolute, styles.container, info_styles]}>
+            <Text style={[styles.font_16, styles.font_justify, text_styles]}>{info_text}</Text>
         </View>
     );
 }
