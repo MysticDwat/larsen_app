@@ -1,5 +1,5 @@
 //imports
-import { StyleSheet, View, Text } from "react-native";
+import { View, Text } from "react-native";
 
 //displays block of info text
 export default function InfoBlock ({

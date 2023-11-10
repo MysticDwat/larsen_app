@@ -1,6 +1,6 @@
 //imports
 import { useState } from 'react';
-import { StyleSheet, View, Pressable, Image, Text } from 'react-native';
+import { StyleSheet, View, Pressable, Image } from 'react-native';
 
 //components
 import InfoBlock from './InfoBlock';

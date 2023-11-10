@@ -1,5 +1,5 @@
 //imports
-import { StyleSheet, View, Pressable, Text } from 'react-native';
+import { View, Text } from 'react-native';
 
 import Button from './Button';
 

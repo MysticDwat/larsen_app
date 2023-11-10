@@ -10,7 +10,7 @@ export default function Options({set_current_view, set_use_outlines, use_outline
             <Button 
                 styles={styles}
                 func={() => set_use_outlines(current => !current)}
-                button_text={'Outlines: ' + (use_outlines ? 'True' : 'False')}
+                button_text={'Outlines: ' + (use_outlines ? 'On' : 'Off')}
             />
 
             {/*Back to Menu*/}
