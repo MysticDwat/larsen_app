@@ -1,5 +1,5 @@
 //imports
-import { Pressable, StyleSheet } from "react-native";
+import { Pressable } from "react-native";
 
 export default function InfoPressable ({
     use_outlines,
