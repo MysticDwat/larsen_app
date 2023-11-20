@@ -99,6 +99,9 @@ const styles = StyleSheet.create({
   font_40: {
     fontSize: 40,
   },
+  font_bold: {
+    fontWeight: 'bold',
+  },
   font_justify: {
     textAlign: 'justify',
   },

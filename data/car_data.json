@@ -2,6 +2,7 @@
     {
         "info":
         {
+            "name": "Dragster Body",
             "text": "The body of the car is made with aluminum to minimize the overall weight. In order to support the structure and increase aerodynamic efficiency, special air ducts called \"NACA ducts\" are sculpted into the body panel. They direct air from beneath the car to the exterior and then up to the drivers compartment, reducing drag.",
             "style": 
             {
@@ -36,6 +37,7 @@
     {
         "info":
         {
+            "name": "Side Vents",
             "text": "A new feature of the latest generation are side vents which help direct air to the engine inlet. To provide protection, body panels extend to help absorb energy during a side-impact and its inlet is surrounded by a mesh cone to prevent any foreign objects from entering and damaging the engine.",
             "style": 
             {
@@ -70,6 +72,7 @@
     {
         "info":
         {
+            "name": "Cockpit",
             "text": "Inside the cockpit is a racing seat that is custom molded from energy absorbing foam to fit each driver. A driver is protected by a twelve-point harness, a steel roll cage, and an aluminum shell.",
             "style": 
             {
@@ -104,6 +107,7 @@
     {
         "info":
         {
+            "name": "Driver Compartment",
             "text": "The driver's compartment contains all the absolute essentials a driver needs to operate the dragster - no more, no less. A removable steering wheel helps the driver get in and out while various levers, switches, and gauges help the driver control the car.",
             "style": 
             {
@@ -138,6 +142,7 @@
     {
         "info":
         {
+            "name": "Afterburner",
             "text": "The afterburner is constructed of stainless-steel. Not only is it functional for directing exhaust - and more excitingly, throwing flames - it's also responsible for making up around 60% of the power output of the engine!",
             "style": 
             {
@@ -172,6 +177,7 @@
     {
         "info":
         {
+            "name": "Parachute Tubes",
             "text": "The parachutes located behind the rear wheels of the dragster are the primary method of slowing and stopping the car at the end of a pass. When ready, the driver pulls the parachute lever to release the parachute.",
             "style": 
             {
@@ -206,6 +212,7 @@
     {
         "info":
         {
+            "name": "Engine Cowling",
             "text": "The engine cowling is an aluminum body panel that sits above the engine in order to direct airflow over the rough surfaces of the engine. It also protects and foreign objects from coming into contact with the engine as it is running.",
             "style": 
             {
@@ -240,6 +247,7 @@
     {
         "info":
         {
+            "name": "Fuel Tanks",
             "text": "The car holds two fuel tanks - one for either side of the vehicle. Each fuel tank contains twelve gallons of jet fuel - 24 total gallons! Inside each tank is what's called a \"baffle\". These baffles help keep the fuel from sloshing while the car makes a pass down the track, but they are also structurally rigid to help dissipate energy in the event of a side-impact crash.",
             "style": 
             {
@@ -274,6 +282,7 @@
     {
         "info":
         {
+            "name": "Car Nose",
             "text": "The front wing and nose of the car are the very first pieces to make contact with oncoming air. They are specifically designed to direct airflow over the rest of the car's body. Made entirely of aluminum, the wing is incredibly strong structurally - and helps to generate between 250 to 300 pounds of downforce as the car runs down the track!",
             "style": 
             {
@@ -308,6 +317,7 @@
     {
         "info": 
         {
+            "name": "Front Wheels",
             "text": "The front wheels and tires of the dragster are made specifically for the car. The tires are pressurized to 40 psi (pounds per square inch) of shop air. The wheels and tires are also equipped with disc brakes to help hold the car in place while it is being staged (lined up) at the starting line of the drag strip.",
             "style": 
             {
@@ -343,6 +353,7 @@
     {
         "info":
         {
+            "name": "Rear Wheels",
             "text": "The rear tires of the car are called \"racing slicks\". They are given this name because there is no tread on the tire - creating a \"slick\" surface. This is done in an attempt to maximize the surface area of the contact patch of the tire touching the ground for optimal grip and control while staging the car at the starting line.",
             "style": 
             {

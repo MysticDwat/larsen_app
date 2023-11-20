@@ -51,6 +51,7 @@ export default function Car({style,
                             key={`info_block_${id}`}
                             info_text={block.text}
                             info_styles={[block.style]}
+                            name={block.name}
                         />
                     );
                 }
