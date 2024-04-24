@@ -25,4 +25,5 @@ As of April 24, 2024, here are current tasks that need to be worked on.
 As of April 24, 2024, here are some things to keep in mind when programming and managing the app.
 - Uses React Native and ExpoGo as lnaguage and development environment.
 - Does not access the internet or take user information, which simplifies App and Play store requirements.
+- The blender file can be found here: https://drive.google.com/file/d/1iKxYhQxvDIZdQNLmOp5NLb81MGuav-D1/view?usp=sharing.
 - If you have any questions feel free to email a previous contributor for help.
